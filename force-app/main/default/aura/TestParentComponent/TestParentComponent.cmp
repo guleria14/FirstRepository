@@ -1,0 +1,13 @@
+<aura:component >
+    <aura:attribute name="checkbox" type="Boolean" default="false"/>
+    <c:TestChildComponent
+                          checkbox="{!v.checkbox}"/>
+    
+    My CheckBoxes are as follows:-
+    <ui:inputCheckbox class="myCheckbox" 
+                                  aura:id="checkboxLeads" 
+                                  label="" 
+                                  value="{!v.checkbox}"
+                      			  change="{!c.onCheck}"
+                      />
+</aura:component>

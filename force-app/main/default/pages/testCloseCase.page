@@ -1,0 +1,22 @@
+<apex:page standardController="Case" showHeader="false" sidebar="false">
+    <apex:includeLightning />
+    <apex:includeScript value="/support/console/42.0/integration.js"/>
+    <div id="lightning" /> 
+    
+    <script type="text/javascript">
+    if(sforce.console.isInConsole()) {
+        
+    }
+    $Lightning.use("c:closeCaseAPP", function() {
+        $Lightning.createComponent(
+            "c:testCaseClose",
+            {"recordId" : "{!Case.Id}"},
+            "lightning",
+            function(cmp) {
+                // do some stuff
+            });
+    });
+    
+    
+    </script>
+</apex:page>

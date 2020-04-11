@@ -1,0 +1,7 @@
+<aura:component implements="lightning:isUrlAddressable">
+    <aura:handler name="init" value="{!this}" action="{!c.doInIt}"/>
+	<lightning:card iconName="standard:event" title="WebinarOverride component">
+	    <lightning:formattedText class="slds-p-left_small" value="This is the target page"/>
+    </lightning:card>
+    <lightning:card/>
+</aura:component>

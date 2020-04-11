@@ -1,0 +1,15 @@
+<aura:component >
+	<aura:attribute name="checkbox" type="Boolean" default="false"/>
+    <ui:inputCheckbox class="myCheckbox" 
+                                  aura:id="checkboxLeads" 
+                                  label="" 
+                                  value="{!v.checkbox}"/>
+    <ui:inputCheckbox class="myCheckbox" 
+                                  aura:id="checkboxLeads" 
+                                  label="" 
+                                  value="{!v.checkbox}"/>
+    <ui:inputCheckbox class="myCheckbox" 
+                                  aura:id="checkboxLeads" 
+                                  label="" 
+                                  value="{!v.checkbox}"/>
+</aura:component>

@@ -2,7 +2,23 @@
     "compilerOptions": {
         "experimentalDecorators": true,
         "baseUrl": ".",
-        "paths": {}
+        "paths": {
+            "c/productReletedList": [
+                "productReletedList/productReletedList.js"
+            ],
+            "c/helloWorld": [
+                "helloWorld/helloWorld.js"
+            ],
+            "c/testLWC": [
+                "testLWC/testLWC.js"
+            ],
+            "c/lightningDataTableExp": [
+                "lightningDataTableExp/lightningDataTableExp.js"
+            ],
+            "c/test1": [
+                "test1/test1.js"
+            ]
+        }
     },
     "include": [
         "**/*",

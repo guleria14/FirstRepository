@@ -1,0 +1,10 @@
+<aura:component implements="force:lightningQuickAction,force:hasRecordId">
+    <lightning:recordEditForm
+        objectApiName="Account"
+        onload="{!c.handleCreateLoad}">
+    <lightning:messages />
+    <lightning:inputField aura:id="nameField" fieldName="Name"/>
+    <lightning:input type="file" label="Attachment" name="file" multiple="true" accept="image/png, .zip" onchange="{! c.handleFilesChange }"/>
+    <lightning:button class="slds-m-top_small" type="submit" label="Create new" />
+</lightning:recordEditForm>
+</aura:component>

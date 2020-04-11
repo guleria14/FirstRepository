@@ -1,0 +1,24 @@
+<aura:component implements="force:lightningQuickAction,force:hasRecordId,flexipage:availableForRecordHome,forceCommunity:availableForAllPageTypes">
+    <aura:attribute type="String" name="recordId"/> 
+    <aura:attribute type="String" name="Status"/> 
+    <lightning:recordEditForm recordId="{!v.recordId}" objectApiName="Case" onsuccess="{!c.handleSuccess}" >
+        <lightning:messages />            
+                <div class="slds-wrap slds-grid">
+                    <div class="slds-size_6-of-12" >
+                        <lightning:outputField fieldName="ownerId"></lightning:outputField>
+                        <lightning:inputField fieldName="CaseNumber"></lightning:inputField>
+                        <lightning:inputField fieldName="AccountId"></lightning:inputField>
+                        <lightning:inputField fieldName="CreatedDate"></lightning:inputField>
+						<lightning:inputField fieldName="Status"></lightning:inputField>
+
+                    </div>
+                    <div class="slds-size_6-of-12" >
+                        <lightning:inputField fieldName="ContactId"></lightning:inputField>
+                        <lightning:inputField fieldName="Priority"></lightning:inputField>
+                    </div>
+                </div>
+              <lightning:button variant="neutral" type="button" name="Cancel" label="Cancel" onclick="{!c.closeModal}"/>
+        <lightning:button disabled="{!v.disabled}" variant="brand" type="submit" name="save" label="Save"/>
+    </lightning:recordEditForm>
+    
+</aura:component>

@@ -1,0 +1,9 @@
+<aura:component >
+	<lightning:input type="text" 
+     name="firstName" 
+     required="true" 
+     aura:id="firstName"
+     label="First Name"
+     value="{!v.firstName}" 
+     messageWhenValueMissing="First name is required" />
+</aura:component>
